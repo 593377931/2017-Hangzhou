@@ -4,7 +4,7 @@
 
 ---
 
-## 9.19
+
 * 上课时间
   * 09:00 - 12:00
   * 14:30 - 17:30
@@ -13,11 +13,16 @@
 * 学好英语有什么用  知乎
 * CSS 权威指南/The Book of CSS3/Eloquent JS
 * 一进制（结绳计数）
+* [十年学会编程](https://bitandliteracy.github.io/21-days)
+* [花两年时间去面试一个人](http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/)
+* [来自老程序员的建议](https://flyouting.gitbooks.io/learn-python-the-hard-way-cn/content/learn-python-the-hard-way-Advice_From_An_Old_Programmer.html)
+* [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
+
 
 
 ----------
 
-## 9.20
+
 
 * win-run:
 * 环境变量 PATH
@@ -106,7 +111,7 @@
 
 ---
 
-## 9.21
+
 * 再谈二进制 
 
 0000	|	0   |
@@ -127,13 +132,10 @@
 1111	|	F   |
 
 
-* [十年学会编程](https://bitandliteracy.github.io/21-days)
-* [花两年时间去面试一个人](http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/)
-* [来自老程序员的建议](https://flyouting.gitbooks.io/learn-python-the-hard-way-cn/content/learn-python-the-hard-way-Advice_From_An_Old_Programmer.html)
-* [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
-
-
 * Markdown
+
+---
+
 * HTML
 	* 正确嵌套 `<div>markdown<i>language</i></div>`
 	* 递归(树状)结构
@@ -170,9 +172,6 @@
 </body>
 ```
 
----
-
-## 9.22
 
 * HTML 实体
 		<: &lt; ":&quot; &:&amp; ':&apos; &nbsp; non-breaking-space
@@ -253,19 +252,29 @@
 					```
 					<a herf="tel:18728783872">call me</a>
 					```
+		* download属性
+
+	* img
+		* src属性
+		* alt属性
+		* width/height 属性
+	* span
+		* 没有明确语义的标签
 
 	* hr
 		* 分割线
 	* br
 		* 换行
 	* font/blink/marquee
-		* obsolete 已弃用
+		* obsolete 已弃用标签
 	* em
-		* 强调
+		* 语义强调
 	* strong
-		* 强调
+		* 语义上更强调
 	* b
 		* 视觉上加粗,没有语义强调
+	* 可访问性
+
 	* u
 		* underline
 	* i
@@ -300,8 +309,101 @@
 			* dd
 			* 一个列表项由一个dt和多个dd组成
 
+	* 表单类标签
+		* form
+			* action属性
+				* 表单提交地址
+			* target
+				* 设置提交跳转位置,`_blank`
+			* method
+		* 一般来说所有表单类标签都应放进form标签内
+		* input
+			* type属性
+				* text 文本
+				* password 密码
+				* checkbox 复选框
+					* 使用name属性进行分组
+				* radio 单选
+					* 使用 name 进行分组
+				* file 文件
+					- accept 接收文件的格式	`<input type="file" accept=".jpg .png">`	`<input type="file accept=".jpg">`
+					- mulitple 选择多个文件 `<input type="file" accept="image/*" multiple>`
+				* hidden 隐藏
+				* image `<input type="image" src="">`
+				* button `<input type="button" value="提交">`
+				* submit `<input type="submit">`
+				* reset `<input type="reset">`
+				* number
+				* email
+				* date
+				* time
+				* url
+				* week
+				* month
+				* tel
+				* range`<input type="range" min="10" max="90" step="5">`
+				* color
+			* value
+				* 文本框的默认值
+				* button上的文字
+			* disabled
+				不能输入状态
+			* required
+			* maxlength
+			* minlength
+			* placeholder
+			* autofocus
+			* tabindex
+				* 影响按tab键时,光标的跳转顺序
+				* 值为-1时,会跳过
+			* name
+				* 
+		* button
+			* 没有type属性的button默认为提交
+			* 非自闭合标签,可嵌套其他内容,input只能显示纯文字
+			* type
+				* submit
+				* reset
+				* button
+		* label
+			* for 属性绑定对应的控件id属性
+			* 将表单控件和相应的文字写进同一个label中
+			* 扩大点击区域
+		* select
+			* 下拉
+			* 子元素为option
+				* option 可以没有value属性时,其值为option标签内的值
+			* multiple 所选
+			* 样式很难修改
+			* selected
+			* hidden
+			* disabled
+		* optgroup
+		 * ```html
+		 		<optgroup label="上海">
+					<option>浦东</option>
+					<option>外滩</option>
+		 		</optgroup>
+		 	 ```
+		* textarea
+			* 默认内容写在标签中
+			* rows属性
+			* cols属性
+		* fieldset
+			* 将多个表单的输入控件组合在一起
+			* 使用 legend 标签可设置此集合名称
+
+---
 
 * GIT
 	* 版本控制工具 source control manager
+	* git config --global user.email "you@example.com"
+	* git config --global user.name "Your name"
 	* git init 
-	* 
+	* git commit -m "commit massage"
+	* git diff
+	* git remote add XXX http://.........
+	* git push -u XXX 
+
+	---
+
