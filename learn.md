@@ -392,6 +392,55 @@
 		* fieldset
 			* 将多个表单的输入控件组合在一起
 			* 使用 legend 标签可设置此集合名称
+		* table标签
+			* 以前经常用于做布局(页面大区块的排列和摆放)
+			* table是方方正正的格子,了解后易于控制
+				* 语义很差
+				* 可读性差
+				* 可维护性差
+				* 可访问性
+			* 目前基本上只用table来显示数据
+			* caption
+				* 表格标题
+			* thead
+				* 表头
+				* 即使出现在tbody的后面,也会被渲染至表头前面
+				* 多余的thead会被作为tbody处理
+			* tbody
+				* 表格主体
+				* 表格中可有多个连续的tbody
+			* tfoot
+				* 表格尾部
+			* tr
+				* 表格行
+			* td
+				* 单元格
+				* td单元格的headers属性应和相应的表头th的id属性相对应
+			* th
+				* 表头
+			* col
+				* t抽象出的table列
+				* 需要紧跟caption标签,
+			* colgroup
+				* col组
+			* map
+				* area
+					- shape属性
+						* rect 矩形
+							* coords "xy,xy"
+						* circle 原型
+							* coords
+						* poly 多边形
+							* coords 多个坐标点
+			* iframe
+				* target attr
+					* `_self`
+					* `_blank`
+					* `_parent`
+					* `_top`
+				* name
+			* frameset
+			* frame
 
 ---
 
