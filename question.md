@@ -111,4 +111,4 @@
       5. 行内盒 -- 常规流中行内级别非定位子元素
       6. z-index: 0 -- 定位元素. 这些定位元素形成了新的层叠上下文
       7. 正z-index值 -- 定位元素. 层叠上下文中的最高等级
-      ![层叠上下文中的层叠次序](image/image/stacking-order1.png)
+      ![层叠上下文中的层叠次序](image/stacking-order1.png)
