@@ -626,3 +626,42 @@
       * 属性值
         * 必须是正确的值
       * 分号是每条规则的结束标志
+
+* 伪元素
+  * 做一些装饰性东西
+  * 字符串
+  * url
+  * attr()
+  * 关键字
+    * open-quote
+    * close-quote
+    * no-open-quote
+    * no-close-quote
+  * 计数器
+    * counter(计数器, value of list-style-type)
+* 计数器
+  * counter-increment: divcount;
+  * 作用域
+    * body {counter-reset: divcount xxx xx ss dd;}
+  * 同一个计数器应用在不同的层级内
+
+# JS
+## 前言
+* js 编程语言
+* html 表达内容，是数据，结构
+* css 表达的是样式
+* HTML/CSS 只能称作代码，JS才能叫程序
+* 编程：表达思想，表达逻辑
+* 结合算法和数据结构
+* 编程语言的三种控制结构：
+  * 顺序结构
+  * 选择结构
+  * 循环结构
+* 图灵完全：如果说一个编程语言是图灵完全的，意味着它可以表达任意的逻辑
+
+## 编程语言的发明
+* 处理海量数据，人工难以完成
+* 处理数据先要将数据表示在编程语言中
+* 如何在编程语言中表示数据
+* 如何处理数据
+* Hello World 的意义？
